@@ -6,6 +6,12 @@ from selenium.common.exceptions import ElementClickInterceptedException
 
 class Tinder:
     def __init__(self, timeout=10):
+        '''
+        inits Tinder object
+        param timeout means the maximum time the bot will wait for buttons
+        :param timeout: int
+        :return: Tinder
+        '''
         self.url = 'https://tinder.com/app/recs'
         self.timeout = timeout
         self.driver = webdriver.Chrome('../../chromedriver.exe')
@@ -14,7 +20,7 @@ class Tinder:
     def login(self, number):
         '''
         puts phone number on login and waits for manual verification
-        :param self: Web
+        :param number: str
         :return: (name: str, description: str)
         '''
 
