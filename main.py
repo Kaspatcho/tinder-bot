@@ -6,7 +6,7 @@ phone_number = ''
 t.login(phone_number)
 
 while True:
-    name, description = t.get_person_data()
+    _, description = t.get_person_data()
     if description != -1:
         t.accept_person()
     else:
