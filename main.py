@@ -2,8 +2,8 @@ from webscraping import Tinder
 from time import sleep
 
 t = Tinder(timeout=20)
-number = '' # seu numero
-t.login(number)
+phone_number = ''
+t.login(phone_number)
 
 while True:
     name, description = t.get_person_data()
